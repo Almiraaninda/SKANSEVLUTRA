@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<form action="">
+
+    <head>
+        <title>Data Kelas - SMKN & LUWU UTARA</title>
+        <style>
+            body {
+                font-family: arial, sans-serif;
+                background-image: linear-gradient(rgba(37, 32, 32, 0.144),rgba(37, 34, 34, 0.199),rgba(37,32,32,0.144)),
+                url(gradasi.jpeg);
+            }
+            nav a {
+                color: white;
+                background-image: linear-gradient(rgba(37, 32, 32, 0.144),rgba(37, 34, 34, 0.199),rgba(37,32,32,0.144)),
+                url(gradasi.jpeg);
+           }
+            .header {
+                background-image: linear-gradient(rgba(37, 32, 32, 0.144),rgba(37, 34, 34, 0.199),rgba(37,32,32,0.144)),
+                url(gradasi.jpeg);
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .container {
+                max-width: 300px;
+                margin: 30px auto;
+                background-color: #94d7d8c2;
+                padding: 50px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <nav>
+                <a href="index23.html">_Home_</a> ||
+                <a href="form.html">_SPMB_</a> ||
+                <a href="https://spmb.sulselprov.go.id/login">_SPMBSULSEL_</a> ||
+                <a href="sarpas.html">_Fasilitas_</a> ||
+                <a href="jurusan.html">Jurusan</a> ||
+                <a href="kepsek.html">_Kepala Ssekolah_</a> ||
+                <a href="galeri.html">_Galeri_</a> ||
+                <a href="anggotaosis.html">_Osis_</a> ||
+                <a href="ekstrakurikuler.html">_Ekstrakurikuler_</a> ||
+                <a href="#">_Contact_</a> ||
+            </nav>
+            <h1>SMKN 7 LUWU UTARA</h1>
+            <p>Berkarakter, Berwawasan, Beriman</p>
+        </div>
+<div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        
+        <table>
+    <div>
+        <label for="nama-lengkap"><b>Nama lengkap:</b></label><br />
+
+<input
+    type="text"
+    id="nama-lengkap"
+    name="nama-lengkap"
+    placeholder="Masukkan nama lengkap"
+    required
+    />
+    </div>
+
+    <div>
+        <label for="password"><b>Password:</b></label><br />
+        <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Masukkan password"
+        required
+        />
+    </div>
+
+    <div>
+        <b>Jenis Kelamin:</b><br />
+        <input id="lk" type="radio" name="jenis_kelamin" checked />
+        <label for="lk">Laki-laki</label>
+        <input id="pr" type="radio" name="jenis_kelamin" />
+        <label for="pr">Perempuan</label>
+    </div>
+
+    <div>
+        <label for="isian-usia"><b>Usia:</b></label><br />
+        <input
+          type="number"
+          id="isian-usia"
+          name="usia"
+          min="17"
+          max="25"
+          value="19"
+          required
+          />
+    </div>
+
+    <div>
+        <label for="tgl-ijazah"><b>Tanggal Ijazah:</b></label> <br />
+        <input
+          type="date"
+          id="tgl-ijazah"
+          name="tgl_ijazah"
+          min="2021-01-01"
+          value="2023-06-20"
+          required
+          />
+    </div>
+
+    <div>
+        <label for="opsi-agama"><b>Agama:</b></label><br />
+        <select id="opsi-agama" name="agama" required>
+            <option disabled>---Pilih Agama --- </option>
+            <option value="islam">Islam</option>
+            <Option value="kristen">Kristen</Option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+            <option value="atheis" disabled>Atheis</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="alamat"><b>Alamat:</b></label> <br />
+        <textarea
+          id="alamat"
+          name="alamat"
+          cols="25"
+          rows="5"
+          placeholder="Harap masukkan alamat secara lengkap"
+          required
+          ></textarea>
+    </div>
+
+    <div>
+        <b>Kemampuan Berbahasa Asing:</b><br />
+        <input type="checkbox" id="inggris" name="bahasa_asing" />
+        <label for="inggris">Inggris</label>
+        <input type="checkbox" id="arab" name="bahasa_asing" />
+        <label for="arab">Arab</label>
+        <input type="checkbox" id="jepang" name="bahasa_asing" />
+        <label for="jepang">Jepang</label>
+    </div>
+
+    <div>
+        <label for="isian-foto"><b>Foto 4x6:</b></label><br />
+        <input
+          type="file"
+          id="isian-foto"
+          name="foto"
+          accept="image/png,image/jpg,image/jpeg"
+          />
+    </div>
+
+    <br />
+    <input type="submit" value="Kirim" />
+    <input type="reset" value="Batal" />
+    <i>*opsional (tidak wajib diisi)</i>
+</table>
+</div>
+</body>
+</form>
+</html>
