@@ -7,7 +7,7 @@
 
 <style>
     body {
-      background-color: rgb(189, 197, 223);
+      background-color: silver;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -24,8 +24,32 @@
     h1 {
         color: rgb(51, 23, 116);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        animation: slideText 6s linear infinite;
+        font-family: Arial, sans-serif;
+        font-size: 32px;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
     
+@keyframes slideText {
+  0% {
+    transform: translateX(-100%)
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
     .btn {
         color: #6b0aac;
         font-size: 28px;
@@ -38,26 +62,32 @@
                 text-align: left;
             }
     div {
-      background-color: rgb(248, 241, 255);
-        color:rgb(44, 77, 185);
-        font-weight: bold;
+      background-color: rgb(24, 31, 66);
+        color:white;
+        
     }
 
     .container {
       max-width: 700px;
       margin: 30px auto;
-      background-color: #ffffff;
+      background-color: rgb(128, 172, 209);
       padding: 25px;
       box-shadow: 0 2px 6px rgba(250, 248, 248, 0.336);
     }
     h2 {
-      background-color: white;
-      color: rgb(38, 114, 57);
+      background-color: rgb(194, 199, 231);
+      color: rgb(37, 20, 114);
       text-align: center;
       margin-bottom: 25px;
     }
+
+    h3 {
+      color: white;
+      line-height: 1.6;
+      text-align: center; 
+    }
     .container p {
-      color: rgb(14, 82, 31);
+      color: black;
       line-height: 1.6;
       text-align: center;
     }
@@ -82,18 +112,18 @@
             padding: 0;
         }
         nav {
-            background-color: #336699; /* Warna latar belakang */
-            padding: 10px 20px; /* Ruang di dalam navigasi */
-            display: flex; /* Menggunakan flexbox untuk tata letak */
-            justify-content: space-between; /* Menyebar item secara merata */
-            align-items: center; /* Menyelaraskan item secara vertikal */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+            background-color: #336699; 
+            padding: 10px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         }
         nav a:hover {
-            background-color: #2a4d66; /* Warna latar belakang saat hover */
+            background-color: #2a4d66;
         }
         nav a.active {
-            background-color: #1e3c54; /* Warna latar belakang untuk tautan aktif */
+            background-color: #1e3c54; 
         }
     </style>
 </head>
@@ -107,12 +137,13 @@
         <a href="galeri.html">Galeri</a> 
         <a href="anggotaosis.html">Osis</a> 
         <a href="ekstrakurikuler.html">Ekstrakurikuler</a> 
-        <a href="#">Contact</a> 
+        
     </nav>
 
     <header style="text-align: center;">
-        <img src="logosmkk.webp" width="300" height="300" style="border-radius: 50%; margin-top: 40px;" />
-        <h1>SMK NEGERI 7 LUWU UTARA</h1>
+        <img src="logosmkk.webp" width="300" height="300" style="border-radius: 50%; margin-top: 40px;
+         animation: rotate 10s linear infinite" />
+        <h1> SMK NEGERI 7 LUWU UTARA </h1>
         <table>
         <a href="https://youtube.com/@smknegeri7luwuutara408?si=fYqWzlVv3ooJLlnS" class="btn">YOUTUBE</a> ||
         <a href="https://www.tiktok.com/@smkn7lutra?_t=ZS-8vggfclpjxy&_r=1" class="btn">TIKTOK</a> ||
@@ -126,7 +157,7 @@
         
         <div class="photo">
           <img src="kepsekfoto.jpeg" alt="Kepala Sekolah">
-          <p>RABIL, S.Pd.I., M.Pd.</p>
+          <h3>RABIL, S.Pd.I., M.Pd.</h3>
         </div>
       
         <p><strong>Bismillahirrahmanirrahim.</strong></p>

@@ -6,8 +6,7 @@
         <style>
             body {
                 font-family: arial, sans-serif;
-                background-image: linear-gradient(rgba(37, 32, 32, 0.144),rgba(37, 34, 34, 0.199),rgba(37,32,32,0.144)),
-                url(gradasi.jpeg);
+                background-color: silver;
             }
             nav a {
         background-color: black;
@@ -37,23 +36,44 @@
                 font-size: 20px;
             }
         </style>
-
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #336699; 
+            padding: 10px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        nav a:hover {
+            background-color: #2a4d66; 
+        }
+        nav a.active {
+            background-color: #1e3c54;
+        }
+    </style>
     </head>
 
     <body>
 
+        <nav>
+        <a href="index.html" class="active">Home</a> 
+        <a href="form.html">SPMB</a> 
+        <a href="https://spmb.sulselprov.go.id/login">SPMBSULSEL</a> 
+        <a href="sarpas.html">Fasilitas</a> 
+        <a href="jurusan.html">Jurusan</a> 
+        <a href="galeri.html">Galeri</a> 
+        <a href="anggotaosis.html">Osis</a> 
+        <a href="ekstrakurikuler.html">Ekstrakurikuler</a> 
+      
+    </nav>
+
         <div class="header">
-            <nav>
-                <a href="index.html">~Home~</a> |
-                <a href="form.html">~SPMB~</a> |
-                <a href="https://spmb.sulselprov.go.id/login">~SPMBSULSEL~</a> |
-                <a href="sarpas.html">~Fasilitas~</a> |
-                <a href="jurusan.html">~Jurusan~</a> |
-                <a href="galeri.html">~Galeri~</a> |
-                <a href="anggotaosis.html">~Osis~</a> |
-                <a href="ekstrakurikuler.html">~Ekstrakurikuler~</a> |
-                <a href="#">~Contact~</a> |
-            </nav>
             <h1>SMKN 7 LUWU UTARA</h1>
             <p>Berkarakter, Berwawasan, Beriman</p>
         </div>
