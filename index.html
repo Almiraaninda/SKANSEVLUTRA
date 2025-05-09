@@ -30,12 +30,8 @@
     }
 
     @keyframes rotate {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+      from { transform: rotate(0deg);}
+      to { transform: rotate(360deg);}
     }
     
 @keyframes slideText {
@@ -48,6 +44,13 @@
   100% {
     transform: translateX(100%);
   }
+}
+.logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 40px;
+  animation: rotate 10s linear infinite;
 }
 
     .btn {
@@ -72,13 +75,16 @@
       margin: 30px auto;
       background-color: rgb(128, 172, 209);
       padding: 25px;
+      border-radius: 70px;
       box-shadow: 0 2px 6px rgba(250, 248, 248, 0.336);
     }
     h2 {
       background-color: rgb(194, 199, 231);
       color: rgb(37, 20, 114);
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+      border-radius: 30px;
+      font-size: 20px;
     }
 
     h3 {
@@ -141,8 +147,7 @@
     </nav>
 
     <header style="text-align: center;">
-        <img src="logosmkk.webp" width="300" height="300" style="border-radius: 50%; margin-top: 40px;
-         animation: rotate 10s linear infinite" />
+        <img src="logosmkk.webp" alt="logo smkn 7" class="logo">
         <h1> SMK NEGERI 7 LUWU UTARA </h1>
         <table>
         <a href="https://youtube.com/@smknegeri7luwuutara408?si=fYqWzlVv3ooJLlnS" class="btn">YOUTUBE</a> ||
@@ -187,7 +192,11 @@
       </div>
 
     <div style="max-width: 600px; margin: 3em auto">
-        <table border="1" width="100%">
+        <table border="1" width="100%" style="border-collapse: collapse; border-radius: 12px;
+        overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <thead>
+          <tr><th colspan="2" style="background-color: #747cc5; padding: 10px;">DATA SEKOLAH</th></tr>
+        </thead>
         <thead>
     <table>
         <tr><th>NAMA SEKOLAH</th><td>SMKN 7 LUWU UTARA</td></tr>
