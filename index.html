@@ -46,7 +46,7 @@
     .container {
       max-width: 700px;
       margin: 30px auto;
-      background-color: #fff;
+      background-color: #ffffff;
       padding: 25px;
       box-shadow: 0 2px 6px rgba(250, 248, 248, 0.336);
     }
@@ -75,8 +75,31 @@
     }
 </style>
 
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #336699; /* Warna latar belakang */
+            padding: 10px 20px; /* Ruang di dalam navigasi */
+            display: flex; /* Menggunakan flexbox untuk tata letak */
+            justify-content: space-between; /* Menyebar item secara merata */
+            align-items: center; /* Menyelaraskan item secara vertikal */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+        }
+        nav a:hover {
+            background-color: #2a4d66; /* Warna latar belakang saat hover */
+        }
+        nav a.active {
+            background-color: #1e3c54; /* Warna latar belakang untuk tautan aktif */
+        }
+    </style>
+</head>
+<body>
     <nav>
-        <a href="index.html">Home</a> 
+        <a href="index.html" class="active">Home</a> 
         <a href="form.html">SPMB</a> 
         <a href="https://spmb.sulselprov.go.id/login">SPMBSULSEL</a> 
         <a href="sarpas.html">Fasilitas</a> 
